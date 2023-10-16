@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body style="overflow:hidden;">
+    <div style="background-color:rgb(112, 184, 243);width:100vmax; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+        <h2>JavaScript Array methods</h2>
+        <button
+          onclick="rakna()"
+          id="handla"
+        >
+          Handla
+        </button>
+        <p id="t-shirts">Summa för t-shirts:</p>
+        <p id="trojor">Summa för tröjor:</p>
+        <p id="totala-summan">Du har handlat för:</p>
+        <input
+          type="text"
+          style="padding: 0.5rem"
+          id="rabatt-input"
+          placeholder="Skriv in din rabattkod"
+        />
+        <button
+          onclick="getDiscount()"
+          id="handla"
+        >
+          Få rabatt
+        </button>
+    </div>
+    <script>
+      console.log(document)
+
+      // ANVISNINGAR
+
+      // Det gäller samma huvudanvisningar som på bestallningar6 (visa pris för tröjor och skjortor)
+      // men det ska tilläggas följande:
+
+      // Nu har kunden handlat tre varor som är med i en collection
+      // D v s, de borde få en 20% rabatt om kunden önskar ta det
+
+      // 1. Tillämpa rabatt bara ifall kunden anger rätt rabattkod i inputen.
+      // OBS! Om rabattkoden är förbrukad, får kunden ingen ny rabatt
+
+      // LEDTRÅD: Ändra på värdet av en global variabel (usedDisccount) på funktionen
+      // getDiscount
+
+      // 2. Du gör en till input med möjlighet till ange en annan rabatt än 20%
+      // och om rabattkoden är korrekt tillämpas den nya rabatten
+      
+      // 3. Du gör om rabattKod till en array med flera rabattkoder (t ex 3)
+      // och sen tillämpar rabatt om rabattkoden finns i arrayn
+
+
+      let bestallning1 = [
+        { product: "t-shirt", pris: 1200 },
+        { product: "t-shirt", pris: 230 },
+        { product: "tröja", pris: 400 },
+        { product: "tröja", pris: 460 },
+      ]
+
+      let rabattKod = "HAPPY_FRIDAY"
+
+      function rakna() {
+        
+      }
+
+      function getDiscount() {
+        
+      }
+    </script>
+  </body>
+</html>

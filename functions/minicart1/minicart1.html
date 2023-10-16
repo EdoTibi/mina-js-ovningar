@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+        <head>
+          <link rel="stylesheet" href="./style.css"></link>
+        </head>
+        <body style="overflow:hidden; margin:0;">
+          <div style="background-color:rgb(112, 184, 243);width:100vw; height:80vh; display:flex; flex-direction:column; justify-content:flex-start; align-items: center;">
+            <div id="main-container">
+              <h2>My JS Cart</h2>
+            </div>
+            <main>
+              <div class="product-container">
+                <p>Butter <span id="price-prod1"></span></p>
+                <div id="prod1">
+                  <button
+                    onclick="myFunction('minus')">
+                    -
+                  </button>
+                  <p id="qty">0</p>
+                  <button class="rightbutton"
+                    onclick="myFunction('plus')">
+                    +
+                  </button>
+                </div>
+              </div>
+            </main>
+          </div>
+          <footer style="padding-top:3rem; color:rgb(93, 167, 240); text-align:center; background:url(./Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:15vh;">
+            @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+      All Rights Reserved 
+          </footer>
+        </body>
+      </html>
+    <script>
+
+   /*  ANVISNINGAR
+
+    1. Plussa och minska antal "butter" när man klickar på knapparna
+    2. Om antalet produkterna är mindre än 1 ändrar ni inte qty (antalet). Använd return
+    3. Sätt in ett pris med 30 kr bredvid butter
+    4. Sätt en bild på produkten på samma höjd
+    5. Lägg till en ny produkt (t ex "milk") med pris 20 kr och få den att fungera 
+    samma typ av fakta
+    6. Se till att den nya produkten har samma funktionalitet som den första på qty */
+      
+      function myFunction(action) {
+        alert(action)
+      }
+    </script>
+  </body>
+</html>

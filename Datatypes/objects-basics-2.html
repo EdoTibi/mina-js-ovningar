@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <body style="margin:0; overflow-x:hidden; overflow-y:scroll;">
+    <div style="background-color:rgb(112, 184, 243);width:100vw; min-height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+      <h3>Jobba med object II &#9997;</h3>
+      <p style="font-style: italic; padding:10px;" id="demo1">Skriv alla elevers namn här 🔤</p>
+      <p style="font-style: italic; padding:10px;" id="demo2">Skriv alla ämnen här 📖</p>
+      <p style="font-style: italic; padding:10px;" id="demo3">
+        Ändra Hans favorit ämne till "BI". Gör sen en button under och visa
+        ämnet här när man klickar
+      </p>
+      <p style="font-style: italic; padding:10px;" id="demo4">
+        Visa här om det är sant att Peter och Hans har samma favorit ämne när
+        man har mouse över denna paragraf
+      </p>
+      <p style="font-style: italic; padding:10px;" id="demo5">
+        Skriv subjects som en nested object inne hos varje elev och visa här
+        Karls ämnen
+      </p>
+      <p style="font-style: italic; padding:10px;" id="demo6">
+        Samla alla elevers namn i en array och gör om namnen till deras
+        initialer inne i en funktion. Visa initialerna och deras studieresultat
+        här
+      </p>
+      <p style="font-style: italic; padding:10px; color:blueviolet; font-weight: bolder;">Yes! Du har gissat rätt: du ska göra om flera gånger hela övningen &#128540;</p>
+    </div>
+    <footer style="padding-top:3rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+All Rights Reserved by Me
+    </footer>
+    <style>
+      body div {
+        background-color: beige;
+        text-align: center;
+        padding: 8px;
+      }
+    </style>
+    <script>
+      // 1
+      let amnen = [
+        { subject_name: "MA" },
+        { subject_name: "BI" },
+        { subject_name: "SO" },
+      ]
+
+      let elever = [
+        {
+          id: 5,
+          name: "Peter Holmkvist",
+          fav_subject: "BI",
+          results: 50,
+        },
+        {
+          id: 6,
+          name: "Hans Skäremo",
+          fav_subject: "MA",
+          results: 60,
+        },
+        {
+          id: 7,
+          name: "Karl Theodorsson",
+          fav_subject: "SO",
+          results: 70,
+        },
+      ]
+    </script>
+  </body>
+</html>

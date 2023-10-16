@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <body style="margin:0; overflow-x:hidden; overflow-y:scroll;">
+      <div style="background-color:rgb(112, 184, 243);width:100vw; min-height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+          <h3>Jobba med object &#9997;</h3>
+          <p style="font-style: italic; padding:5px;" id="demo1">Visa här value till property "name" i objektet anvandare</p>
+          <p style="font-style: italic; padding:5px;" id="demo2">
+            Lägg till en ny property "member" i objektet "anvandare" och visa dess
+            value "true" här
+          </p>
+          <p style="font-style: italic; padding:5px;" id="demo3">
+            Skapa ett nytt objekt "admin" med ett namn och ett password. Visa
+            password när man klickar här
+            <button style="cursor:pointer; margin-top:20px;border:none;border-radius:5px;padding:10px; background-color:rgb(45, 125, 205); color:white;">Visa pass</button>
+          </p>
+          <p style="font-style: italic; padding:5px;" id="demo4">
+            Skapa en array [] med 2 objekt (med id och name) inne i arrayn. Visa
+            property "name" på det första objektet här
+          </p>
+          <p style="font-style: italic; padding:5px;" id="demo5">
+            Skriv här denna sträng med de förra objektens "name" properties: "Vi har
+            en användare (anvandares namn) och en admin (admins namn)"
+          </p>
+          <p style="font-style: italic; padding:5px;" id="demo6">
+            Skriv en nested object inne på ditt admin objekt: property "isAdmin",
+            value "true"
+          </p>
+          <p>(forts.) Visa här att det är "true" att admin isAdmin</p>
+          <p><b style="color:rgb(45, 125, 205)">Öppna en ny HTML fil och gör om flera gånger hela övningen,med andra värden!</b></p>
+      </div>
+      <footer style="padding-top:3rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+        @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+  All Rights Reserved by Me
+      </footer>
+    <style>
+      body div {
+        background-color: beige;
+        text-align: center;
+        padding: 8px;
+      }
+    </style>
+    <script>
+      // 1
+      let anvandare = { id: 5, name: " Peter" , member: true };
+      let anvandare2 = { name: " Tibi", password: 1234}
+      <button onclick="Vissa Pass()">/button< 
+      document.getElementById('demo1').innerHTML += anvandare.name
+      document.getElementById("demo2").innerHTML += anvandare.name + anvandare.member
+      document.getElementById("demo3").innerHTML += anvandare2.name + anvandare2.password
+
+    </script>
+  </body>
+</html>

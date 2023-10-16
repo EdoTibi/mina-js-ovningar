@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body style="overflow:hidden;">
+    <div style="background-color:rgb(112, 184, 243);width:100vmax; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+        <h2>JavaScript Array methods</h2>
+        <p id="array-less-last-item"></p>
+        <p id="array-with-two-more"></p>
+        <p id="transformed-array"></p>
+        <p id="final-array"></p>
+    </div>
+    <footer style="padding-top:1.5rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+  All Rights Reserved 
+    </footer>
+    <script>
+
+    // For this array task, we provide you with a starting array, 
+    // and you will work in somewhat the opposite direction. You need to:
+
+    // Remove the last item in the array and show it in <p id="array-less-last-item">.
+    
+    // Add two new names to the end of the array and show it in <p id="array-with-two-more">.
+    
+    // Go over each item in the array and add its index number after 
+    // the name inside parentheses, for example Ryu (0).
+    // Show it in <p id="transformed-array"> 
+
+    // Finally, join the array items together in a single string called myString, 
+    // with a separator of "-". Show it in <p id="final-array">
+
+    let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy"]
+
+     document.getElementById("array-less-last-item").innerHTML = myArray.pop();
+     document.getElementById("array-with-two-more") = myArray.push("Gustavo", "Lars");
+
+     document.getElementById("transformed-array") = [ Ryu[0], Ken[1], Chun-Li[2], Cammy[3]]; 
+
+     
+
+
+</script>
+  </body>
+</html>

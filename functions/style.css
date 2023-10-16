@@ -1,0 +1,38 @@
+#main-container {width:40%;
+    padding:1rem;
+    display: flex; 
+    margin-top:5rem;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    background-color: rgb(54, 140, 210);
+    border:1px solid rgb(195, 209, 209);}
+
+h2, h3{
+    width:100%; text-align:center;
+    color:white;
+}
+
+button{ 
+    height:35px;
+    width:85px;
+    text-align: center;
+    margin: 0.5rem;
+    background-color: green;
+    color: lightgreen;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: large;
+}
+
+input{
+    padding:10px;
+    border-radius:5px;
+    font-size: medium;
+}
+
+button:hover{
+  background-color: rgb(67, 101, 67);
+  color:white;
+}

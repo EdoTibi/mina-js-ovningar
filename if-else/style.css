@@ -1,0 +1,37 @@
+input {padding: 0.5rem; 
+    font-size: 0.85em;
+    border-radius:5px;}
+
+button {margin:1rem;
+    padding: 0.5rem;
+    background-color: green;
+    color: lightgreen;
+    border-radius: 5px;}
+
+button:hover {background-color: rgb(2, 83, 2);
+    color: white;
+    cursor:pointer;}
+
+ul{
+    display:flex;
+    list-style-type: none;
+    padding-left:0;
+}
+
+li.not-clicked{
+   padding:10px;
+   margin:10px;
+   color:rgb(112, 184, 243);
+   background-color: white;
+   border-radius: 5px;
+   cursor:pointer;
+}
+
+li.clicked, li.not-clicked:hover{
+   padding:10px;
+   margin:10px;
+   border-radius: 5px;
+   color:white;
+   background-color: rgb(85, 140, 184);
+   cursor:pointer;
+}

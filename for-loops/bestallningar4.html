@@ -1,0 +1,67 @@
+<!--E-COMMERCE APP-->
+<!--KOPIERA OCH KLISTRA (COPY / PASTE) I W3SCHOOLS EDITOR-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body style="overflow:hidden;">
+    <div style="background-color:rgb(112, 184, 243);width:100vmax; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+        <h2>JavaScript For-loops</h2>
+        <button
+          onclick="rakna()"
+          id="handla"
+        >
+          Handla
+        </button>
+        <p id="t-shirts">Summa för t-shirts:</p>
+        <p id="trojor">Summa för tröjor:</p>
+        <p id="totala-summan">Du har handlat för:</p>
+    </div>
+    <footer style="padding-top:1.5rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+  All Rights Reserved 
+    </footer>
+    <script>
+      // Nu har vi bara en beställning! Men varje produkt ligger som objekt
+      // inom en array med pris och produkttyp
+
+      // Få ut den totala summan men även priset för t-shirts och tröjor
+      // var för sig
+
+      // Ingen rabatt nu!
+
+      bestallning1 = [{
+        product: 't-shirt',
+        pris: 1200
+      }, {
+        product: 't-shirt',
+        pris: 230
+      }, {
+        product: 'tröja',
+        pris: 400
+      }, {
+        product: 'tröja',
+        pris: 460
+      }]
+
+      let totalSum = 0;
+      let tshirtsSum = 0;
+      let trojorsSum = 0;
+      let discount = 0;
+
+      function rakna() {
+
+        for (i = 0; i < bestallning1.length; i++) {
+
+        }
+
+
+        document.getElementById('t-shirts').innerHTML +=
+        document.getElementById('trojor').innerHTML +=
+        document.getElementById('totala-summan').innerHTML +=
+
+      }
+    </script>
+  </body>
+</html>

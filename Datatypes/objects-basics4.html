@@ -1,0 +1,72 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <body style="margin:0; overflow-x:hidden; overflow-y:scroll;">
+    <h3 style="margin:2rem auto; text-align:center;">"Crazy väder" app ☀️</h3>
+    <div style="background-color:rgb(112, 184, 243);max-width:100vw; min-height:75vh; display:flex; justify-content:center; align-items: center;">
+        <div style="width:80%; border:1px solid rgb(70, 112, 210); padding:10px; border-radius:10px; display:flex; margin:1rem; align-items:center; flex-direction:column; justify-content:center;">
+            <p>JOBBA MED VÄDRET I KONSOLEN</p>
+        </div>
+    </div>
+    <footer style="padding-top:3rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+        @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+    All Rights Reserved 
+    </footer>
+    <script>
+
+    // ANVISNINGAR:
+
+// övning 1: Skriv i konsolen värdet för namnegenskapen inuti lokalitetsobjektet.
+// Övning 2: Skriv i konsolen värdet för egenskapen temperature_max inuti day1-objektet.
+// Övning 3: Skriv i konsolen värdet för egenskapen sunrise inuti objektet day1 och objektet dawnDask.
+// Övning 4: Skriv i konsolen värdet på land egenskapen inuti lokalitetsobjektet.
+// Övning 5: Skriv i konsolen värdet på egenskapen temperature_max inuti dag2-objektet.
+// Övning 6: Skriv i konsolen värdet för egenskapen sunset inuti objektet day2 och objektet dawnDask.
+// Övning 7: Skriv i konsolen värdet för namnegenskapen inuti ett objekt nestat i ett annat objekt.
+
+    let cityWeather =
+            {locality: 
+                {name: "Madrid",
+                country: "Spain",
+                },
+            day1: {temperature_max: 24,
+                    temperature_min: 8,
+                    text: "Cloudy",
+                    humidity: 56,
+                    wind: 21,
+                    dawnDask:{
+                        sunrise: "7:47",
+                        sunset: "18:09",
+                        moonrise: "15:42",
+                        moonset: "01:39"}
+                },
+            day2: {temperature_max: 14,
+                    temperature_min: 2,
+                    text: "Rainy",
+                    humidity: 98,
+                    wind: 67,
+                    dawnDask:{
+                        sunrise: "5:47",
+                        sunset: "19:09",
+                        moonrise: "17:42",
+                        moonset: "03:39"}
+                },
+            day3: {temperature_max: 12,
+                    temperature_min: 4,
+                    text: "Sunny",
+                    humidity: 65,
+                    wind: 28,
+                    dawnDask:{
+                        sunrise: "8:47",
+                        sunset: "19:09",
+                        moonrise: "22:42",
+                        moonset: "06:39"},
+                    icon: '☀️'
+                }
+            }
+
+    </script>
+    </body>
+</html>

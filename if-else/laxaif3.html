@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body style="overflow:hidden;">
+    <div style="background-color:rgb(112, 184, 243);width:100vw; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+      <h2>JavaScript Comparison</h2>
+      <p>Skriv in ditt resultat på tentan och få ditt betyg:</p>
+          <input id="resultat" placeholder="Skriv ditt resultat på tentan" />
+          <button onclick="myFunction()">Kolla betyg</button>
+    </div>
+    <p id="betyg"></p>
+    <footer style="padding-top:1.5rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+All Rights Reserved 
+    </footer>
+    <script>
+      // Titta på functionen nedan. 
+      // Med ordet 'return' avslutas funktionen.
+
+      // Gör om nu den så att:
+      // 1. Om result inte är en siffra så skrivs "Bara resultat med siffror, tack"
+      // och funktionen avslutas (tips: använd metoden Number() och även ordet return)
+      // 2. Om result är under 0 skrivs "Dags att skriva tentan?" i orange färg
+      // 3. Men om result är över 25 skrivs "Du är en supermänniska!" i blå färg
+
+      // Resten av conditions från övning 2 ska fortsätta gälla
+      
+      // BONUS:
+      // Du anger även % rätt svar, till exempel 15 rätt svar i resultat = 'Ditt betyg är Godkänd (60% rätt)'
+      // Du ger en unik färg för varje betyg-meddelande i <p id="betyg"></p> (för underkänd - godkänd - väl godkänd)
+
+      function myFunction() {
+        let betyg;
+        let result = document.getElementById("resultat").value;
+
+        return
+      }
+    </script>
+  </body>
+</html>

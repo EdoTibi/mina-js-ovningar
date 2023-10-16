@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <body style="overflow:hidden; margin:0;">
+    <div style="background-color:rgb(112, 184, 243);width:100vmax; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+      <div id="logo">
+        <h2>My Tweet App</h2>
+      </div>
+      <iframe name="hiddenFrame" class="hide"></iframe>
+      <form id="login-form" target="hiddenFrame">
+        <input id="username" type="text" placeholder="Enter username" />
+        <input id="password" type="password" placeholder="Enter password" />
+        <input type="submit" value="Log in" id="handla" />
+      </form>
+  </div>
+  <footer style="padding-top:3rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:15vh;">
+    @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+All Rights Reserved 
+  </footer>
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      background: url("https://abs.twimg.com/sticky/illustrations/lohp_850x623.png")
+        no-repeat center center;
+    }
+
+    .hide {
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 1px;
+      height: 1px;
+    }
+
+    #login-form {
+      margin: 1rem auto 0 auto;
+      width: 34%;
+      color: white;
+      border-radius: 10px;
+      background-color: rgb(53, 131, 187);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    #error-msg {
+      color: red;
+      font-weight: bold;
+    }
+
+    #logo {
+      display: flex;
+      width: 36%;
+      max-height: 12%;
+      justify-content: space-around;
+      align-items: center;
+      margin: 3rem auto;
+      color: white;
+      border-radius: 10px;
+      background-color: rgb(53, 131, 187);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    #login-message {
+      width: 20%;
+      color: white;
+      text-align: center;
+      margin: 1rem auto;
+      padding: 0.5rem;
+      border: 0.5px dotted grey;
+      visibility: hidden;
+      border-radius: 5px;
+      background-color: rgb(36, 105, 182);
+    }
+
+    input {
+      padding: 0.5rem;
+      border-radius: 5px;
+      margin: 0.5rem;
+      border: 1px solid white;
+    }
+
+    input:last-child {
+      background-color: rgb(78, 139, 209);
+      color: white;
+    }
+
+    input:last-child:hover {
+      background-color: rgb(57, 101, 152);
+      color: lightblue;
+      cursor:pointer;
+    }
+
+  </style>
+    
+    <script>
+
+      // ANVISNINGAR
+      // Utvidga föregående övningen så att hela fomuläret försvinner om man är inloggad
+      // men den kvarstår om username eller password är fel
+      // (Felmeddelande visas)
+
+      // LEDTRÅD: Använd style med CSS-egenskapen display på formuläret.
+
+      users = ["hanna26", "Pete25", "gcs26"]
+      my_pass = "my_pass"
+  
+    </script>
+  </body>
+</html>

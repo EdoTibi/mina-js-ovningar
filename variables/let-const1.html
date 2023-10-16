@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <body style="overflow:hidden; margin:0;">
+    <div style="background-color:rgb(112, 184, 243);width:100vw; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+      <h2>JS VARIABLER</h2>
+    </div>
+    <footer style="padding-top:3rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+All Rights Reserved 
+    </footer>
+    <script>
+
+      // 1. Declare a variable using `let`
+    let name = "John";
+    console.log(name); // Output: John
+
+    // 2. Change the value of a `let` variable
+    name = "Jane";
+    console.log(name); // Output: Jane
+
+    // 3. Try to redeclare a `let` variable
+    let name = "Jane"; // This will throw an error because 'name' has already been declared
+
+    // 4. Declare a variable using `const`
+    const pi = 3.14;
+    console.log(pi); // Output: 3.14
+
+    // 5. Try to change the value of a `const` variable
+    pi = 3.14159; // This will throw an error because you can't change the value of a const variable
+
+    // 6. Try to redeclare a `const` variable
+    const pi = 3.14159; // This will throw an error because 'pi' has already been declared
+
+    // 7. Declare a `let` variable inside a block
+    {
+        let x = 2;
+        console.log(x); // Output: 2
+    }
+    console.log(x); // This will throw an error because 'x' is not defined outside the block
+
+    // 8. Declare a `const` variable inside a block
+    {
+        const x = 2;
+        console.log(x); // Output: 2
+    }
+     console.log(x); // This will throw an error because 'x' is not defined outside the block
+
+    // 9. Try to declare a `let` variable without initializing it
+    let x;
+    console.log(x); // Output: undefined, because x has not been initialized yet
+
+    // 10. Try to declare a `const` variable without initializing it
+    const x; // This will throw an error because const variables must be initialized at declaration
+
+  </script>
+  </body>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <body style="overflow:hidden; margin:0;">
+    <div style="background-color:rgb(112, 184, 243); width:100vw; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+      <h2 style="line-height: 3.2; position:fixed; top:0;height:80px; width:100vw; margin-top:0;background-color:rgb(58, 136, 200); color: rgb(67, 64, 60); text-align: center">
+        JavaScript Numbers &#127942;
+      </h2>
+      <div style="margin-top:4rem;text-align: center; padding: 8px">
+        <h3>Jobba med siffror &#129351;</h3>
+        <p id="demo1">Summera x och y. Resultat?</p>
+        <p id="demo2">Gör om y till siffra och summera igen. Resultat?</p>
+        <p id="demo3">
+          Konvertera w med Number() och skriv här dess data typ: (typeof). Resultat?
+        </p>
+        <p id="demo4">Skriv här z med 2 decimaler bara (toFixed). Resultat?</p>
+        <p id="demo5">Gör om z till heltal (parseInt). Resultat?</p>
+      </div>
+      <div
+        style="
+          text-align: center;
+        "
+      >
+        <h3>Jobba med Math &#129352;</h3>
+        <p id="math1">Visa här det sammanlagda priset på <b>bestallning1</b> avrundat uppåt</p>
+        <p id="math2">Visa här det sammanlagda priset på <b>bestallning2</b> avrundat nedåt</p>
+        <h3>BONUS UPPGIFT!  &#129353;🎉</h3>
+        <p id="stil-paragraph">Stilen ändras</p>
+        <div>
+          <p><b>Användaren ska gissa på en random siffra 1 - 10</b></p>
+          <p><i>Tips: Använd onkeyup eventet och manipulera funktionen checkNumber med egenskapen value från inputen (inte innerHTML)</i></p>
+          <p><b>Bonus på bonus</b>: Se till att ändra färgen (grön -rätt / röd-fel) på ditt resultat meddelande</p>
+          <p><b>Tips</b>: Googla fram hur man använder egenskapen style och color på 'span id="Math4"'</p>
+        </div>
+        <input onkeyup="checkNumber()" style="border:none; padding:15px; border-radius:5px;" placeholder="Gissa mellan 1 och 10 här" id="math3"/>
+        <p>Resultat på din gissning är: <span id="math4"></span> </p>
+      </div>
+    </div>
+    <script>
+      let x = 10
+      let y = "20"
+      let w = "32"
+      let z = 9.8879
+      let bestallning1 = [12.34,56.21,976.2,352.67]
+      let bestallning2 = [139.23, 43.56,75.25]
+
+      // GLOBAL SCOPE
+
+      function checkNumber(){
+       
+      }
+    </script>
+  </body>
+</html>

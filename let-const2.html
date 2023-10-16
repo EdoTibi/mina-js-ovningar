@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+  <body style="overflow:hidden; margin:0;">
+    <div style="background-color:rgb(112, 184, 243);width:100vw; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+      <h2>JS VARIABLER</h2>
+    </div>
+    <footer style="padding-top:3rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+All Rights Reserved 
+    </footer>
+    <script>
+
+// 1. Declare a global variable using `var`
+var x = 10;
+console.log(x); // Output: 10
+
+// 2. Access a global variable inside a block
+{
+    console.log(x); // Output: 10
+}
+
+// 3. Change the value of a global variable inside a block
+{
+    x = 20;
+    console.log(x); // Output: 20
+}
+console.log(x); // Output: 20
+
+// 4. Declare a global variable using `let`
+let y = 30;
+console.log(y); // Output: 30
+
+// 5. Access a global `let` variable inside a block
+{
+    console.log(y); // Output: 30
+}
+
+// 6. Change the value of a global `let` variable inside a block
+{
+    y = 40;
+    console.log(y); // Output: 40
+}
+console.log(y); // Output: 40
+
+// 7. Shadow a global `var` variable inside a block using `let`
+var z = 50;
+{
+    let z = 60;
+    console.log(z); // Output: 60
+}
+console.log(z); // Output: 50
+
+// 8. Shadow a global `let` variable inside a block using `let`
+let w = 70;
+{
+    let w = 80;
+    console.log(w); // Output: 80
+}
+console.log(w); // Output: 70
+
+// 9. Declare a global constant using `const`
+const pi = 3.14;
+console.log(pi); // Output: 3.14
+
+// 10. Access a global constant inside a block
+{
+    console.log(pi); // Output: 3.14
+}
+
+  </script>
+  </body>
+</html>
+

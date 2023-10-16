@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body style="overflow:hidden;">
+    <div style="background-color:rgb(112, 184, 243);width:100vmax; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+        <h2>JavaScript Array methods</h2>
+        <input id="category" placeholder="skriv kategori"/>
+        <input id="pris" placeholder="skriv Pris"/>
+        <input id="farg" placeholder="skriv Farg"/>
+        <input id="bild" placeholder="skriv Bild"/>
+        <!--      <img src="https://johanssons.se/wp-content/uploads/prs/image/12-4059/12-4059-1.JPG"/> -->
+   
+        <button
+          onclick="skapaProd()"
+          id="create-prod"
+        >
+          Skapa
+        </button>
+        <p id="produkt"></p>
+    </div>
+    <footer style="padding-top:1.5rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+  All Rights Reserved 
+    </footer>
+    <script>
+
+      // ANVISNINGAR: 
+
+      // Skapa och visa en ny produkt varje gång man klickar på knappen "skapa". Produkten ska ha ett pris, namn, category och bild
+
+      // Du behöver lägga till 4 inputar (för category, pris, img, namn)
+      // och "fånga" inputens value i den nya produktens variabler
+
+      // LEDTRÅD: Ändra bestallning1 med de nämnda 4 nycklarna
+
+      // Den nya produktens värden ska synas på sidan
+
+      // BONUS: Du lägger till en bild på den nya produkten!
+      // BONUS LEDTRÅD: Skapa en <img> tag och sen använd en extern länk från en bild i attributen src
+
+      // BONUS 2: Du visar alla produkter (fler än en) och inte bara en produkt i taget
+
+      let bestallning1 = [{
+        category: 't-shirt',
+        pris: 1200,
+        img:"",
+        namn: ""
+      }]
+
+      function skapaProd() {
+        let prodCat = document.getElementById('category').value
+        alert(prodCat)
+
+        let prodCat1 = document.getElementById('pris').value
+        alert(prodCat1)
+        
+        let prodCat2= document.getElementById('farg').value
+        alert(prodCat2)
+        
+        let prodCat3= document.getElementById('bild').value
+        alert(prodCat3)
+
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body style="overflow:hidden;">
+    <div style="background-color:rgb(112, 184, 243);width:100vw; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+      <h2>JavaScript Comparison</h2>
+      <p>Skriv in ditt resultat på tentan och få ditt betyg:</p>
+          <input id="resultat" placeholder="Skriv ditt resultat på tentan" />
+          <button onclick="myFunction()">Kolla betyg</button>
+    </div>
+    <p id="betyg"></p>
+    <footer style="padding-top:1.5rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+All Rights Reserved 
+    </footer>
+
+    <script>
+      
+      // Gör om if-satserna så att:
+      
+      // 1. om result finns så jämförs betyg med result (som nu)
+      // 2. du jämför betyg med result och får även betyg B och D
+      // 3. om result inte finns görs en alert('Det finns inget resultat')
+
+      function myFunction() {
+        let betyg;
+        let result = document.getElementById("resultat").value;
+
+        if (result < 12) {
+          betyg = "F";
+        } else if (result >= 12 && result <= 20) {
+          betyg = "E";
+        } else {
+          betyg = "A";
+        }
+        document.getElementById("betyg").innerHTML = "Ditt betyg är " + betyg;
+      }
+    </script>
+  </body>
+</html>

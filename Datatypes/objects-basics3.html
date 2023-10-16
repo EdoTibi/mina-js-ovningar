@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <body style="margin:0; overflow-x:hidden; overflow-y:scroll;">
+    <h3 style="margin:2rem auto; text-align:center;">"Crazy väder" app ☀️</h3>
+    <div style="background-color:rgb(112, 184, 243);max-width:100vw; min-height:75vh; display:flex; justify-content:center; align-items: center;">
+        <div style="width:80%; border:1px solid rgb(70, 112, 210); padding:10px; border-radius:10px; display:flex; margin:1rem; align-items:center; flex-direction:column; justify-content:center;">
+            <p style="font-style: italic; padding:0;" id="demo1">City: </p>
+            <p style="font-style: italic; padding:0;" id="demo1">Country: </p>
+            <p style="font-style: italic; padding:0;" id="demo2">Weather conditions here</p>
+            <div style="width:100%; display:flex; justify-content: space-around;">
+                <button onclick="visaVader()" style="cursor:pointer; margin-top:20px;border:none;border-radius:5px;padding:10px; background-color:rgb(45, 125, 205); color:white;">Dag 1</button>
+                <button onclick="visaVader1()" style="cursor:pointer; margin-top:20px;border:none;border-radius:5px;padding:10px; background-color:rgb(45, 125, 205); color:white;">Dag 2</button>
+                <button onclick="visaVader2()" style="cursor:pointer; margin-top:20px;border:none;border-radius:5px;padding:10px; background-color:rgb(45, 125, 205); color:white;">Dag 3</button>
+               
+            </div>
+        </div>
+    </div>
+    <footer style="padding-top:3rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+        @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+    All Rights Reserved 
+    </footer>
+    <script>
+
+    // ANVISNINGAR:
+
+    // Lägg till 3 funktioner som triggas när man klickar på var sin knapp (day 1, 2, 3)
+    // Se till att varje funktion uppdaterar sidan med rätt data från cityWeather
+
+    // BONUS: Du använder bara en enda funktion på alla tre knappar
+    // LEDTRÅD: Skicka en argument / parametern i funktionen
+
+    // BONUS 2: Du visar en bild med motsvarande väder på motsvarande dag.
+    // Du kan ta emoticons från denna sida: https://emojiguide.org/sun
+
+    let cityWeather =
+            {locality: 
+                {name: "Madrid",
+                country: "Spain",
+                },
+            day1: {temperature_max: 24,
+                    temperature_min: 8,
+                    text: "Cloudy",
+                    humidity: 56,
+                    wind: 21,
+                    sunrise: "7:47",
+                    sunset: "18:09",
+                    moonrise: "15:42",
+                    moonset: "01:39",
+                },
+            day2: {temperature_max: 14,
+                    temperature_min: 2,
+                    text: "Rainy",
+                    humidity: 98,
+                    wind: 67,
+                    sunrise: "5:47",
+                    sunset: "19:09",
+                    moonrise: "17:42",
+                    moonset: "03:39",
+            },
+            day3: {temperature_max: 12,
+                    temperature_min: 4,
+                    text: "Sunny",
+                    humidity: 65,
+                    wind: 28,
+                    sunrise: "8:47",
+                    sunset: "19:09",
+                    moonrise: "22:42",
+                    moonset: "06:39",
+                }
+            }
+
+    </script>
+    </body>
+</html>

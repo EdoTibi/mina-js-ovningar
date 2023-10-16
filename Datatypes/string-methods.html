@@ -1,0 +1,54 @@
+<!--KOPIERA OCH KLISTRA (COPY / PASTE) I W3SCHOOLS EDITOR-->
+<!DOCTYPE html>
+<html>
+    <body style="overflow:hidden;">
+      <div style="background-color:rgb(112, 184, 243);width:100vw; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+        <h2>JavaScript träning sträng metoder &#9986;</h2>
+        <h3>Här kommer mina svar:</h3>
+        <p id="demo1">Mina sista fyra är: </p>
+        <p id="demo2">Men mitt fulla personnummer är </p>
+        <p id="demo3">Nu ska det vara rätt! Mitt riktiga personnummer är </p>
+        <p id="demo4">Och jag heter:</p>
+        <p id="demo5">Jag föddes 1969! Har jag skrivit rätt? Svar:</p>
+        <p onmouseover="" style="color:blue; font-weight:bold;" id="demo6">Visa Personnummer</p>
+    </div>
+    <footer style="padding-top:3rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+All Rights Reserved 
+    </footer>
+    <script>
+      let mittPersNummer = "730228-1220"
+      let mittNamn = "Skriv ditt namn här"
+      // ÖVNINGAR
+      // 1. Klipp en sträng med de fyra sista siffror i värdet från mittPersNummer på <p> med id "demo1"
+      // Använd slice() substr() eller substring()
+
+      //document.getElementById("demo1").innerHTML += mittPersNummer.slice(7,11)
+      // document.getElementById("demo1").innerHTML += mittPersNummer.substring(7, 11)
+
+      // 2. Gör om mittPersNummer till 1973 istället för 73 på <p> med id "demo2".
+      //  Använd concat()
+
+     
+
+      // 3. Men du skrev fel! Du föddes 1969. Gör om 1973 till 1969 med replace()
+      // och visa det på <p> med id demo3:
+      
+      // 4. Men denna sida vill också få ditt namn! Fast i stora bokstäver (UPPERCASE)
+      // på <p> id demo4
+       
+      // 5. Du vill vara säker på att du skrivit rätt år (1969)
+      // För att lösa det visar du på <p> id demo5 om MittPersNummer börjar med "1969".
+      // Du ska jämföra de första fyra siffrorna med 1969 och visa resultatet (true / false)
+      // Läs om hur man jämför med hjälp av "==" på w3schools logical operators
+
+    
+      // BONUS: Lägg till en mouseover event (onmouseover) så att man kan göra en alert()
+      // på ditt personnummer när man har musen över <p> med id demo6 (se länken nedan)
+      // https://www.w3schools.com/jsref/event_onmouseover.asp
+    
+      // 6. Gör om flera gånger denna övning helst utan att titta!
+
+    </script>
+  </body>
+</html>

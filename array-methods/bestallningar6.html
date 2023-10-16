@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body style="overflow:hidden;">
+    <div style="background-color:rgb(112, 184, 243);width:100vmax; height:80vh; display:flex; flex-direction:column; justify-content:center; align-items: center;">
+        <h2>JavaScript Array methods</h2>
+        <button
+      onclick="rakna()"
+      id="handla"
+    >
+          Handla
+        </button>
+        <div id="meddelanden">
+          <p id="t-shirts">Summa för t-shirts:</p>
+          <p id="trojor">Summa för tröjor:</p>
+          <p id="totala-summan">Du har handlat för:</p>
+        </div>
+        <button
+          onclick="getDiscount()"
+          id="handla"
+        >
+          Få rabatt
+        </button>
+    </div>
+    <footer style="padding-top:1.5rem; color:rgb(93, 167, 240); text-align:center; background:url(../Test-stmaria-logo-mitten-3.png) no-repeat right bottom; background-size: contain; height:20vh;">
+      @Copyright 1993 – 2023 | S:ta Maria folkhögskola av S:ta Maria folkhögskola 
+  All Rights Reserved 
+    </footer>
+    <script>
+
+      // ANVISNINGAR
+
+      // Nu har kunden handlat tre varor som är med i en collection
+      // D v s, de borde få en 20% rabatt om kunden önskar ta det
+
+      // Fyll i funktionen getDiscount() så att kunden får den
+      // rabatterade totala summan om han / hon klickar i Få rabatt-knappen
+
+      // Prova att lägga till en extra knapp med texten "Ångra t-shirts" och se till 
+      // att den triggar en ny funktion som tar bort alla t-shirts från bestallning1
+      // (Den kan göra en alert meddelande "T-shirts borttagna")
+
+      // Testa sen den förra funktionen Handla. Du borde kunna se priset av varorna utan t-shirts 
+
+      let bestallning1 = [
+        { product: "t-shirt", pris: 1200, collection: true },
+        { product: "t-shirt", pris: 230, collection: true },
+        { product: "tröja", pris: 400, collection: false },
+        { product: "tröja", pris: 460, collection: true },
+      ]
+
+      let totalSum = bestallning1[0].pris +bestallning1[1].pris + bestallning1[2].pris +bestallning1[3].pris 
+      let tshirtsSum = bestallning1[0].pris +bestallning1[1].pris
+      let trojorsSum = bestallning1[2].pris +bestallning1[3].pris
+      let discount = 0
+
+      function rakna() {
+        document.getElementById("totala-summan").innerHTML += totalSum
+        document.getElementById("t-shirts").innerHTML = "Summa för t-shirts: " + tshirtsSum;
+        document.getElementById("trojor").innerHTML = "Summa för tröjor:  " + trojorsSum;
+
+      }
+
+      function getDiscount() {}
+    </script>
+  </body>
+</html>
